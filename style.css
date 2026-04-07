@@ -5,6 +5,11 @@
     --text-dark: #333;
 }
 
+/* Enable smooth scrolling for the whole page */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -139,4 +144,29 @@ footer {
     padding: 40px;
     background: #222;
     color: white;
+}
+
+/* --- NEW: Back to Top Button --- */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--accent-color);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: 0.3s ease-in-out;
+    font-size: 1.2rem;
+    z-index: 1000; /* Ensures it stays on top of other elements */
+}
+
+.back-to-top:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-5px); /* Creates a slight "lift" effect when hovered */
 }
