@@ -113,7 +113,7 @@ header h1 {
 }
 
 .h-img {
-    height: 250px; /* INCREASED: from 200px to 250px */
+    height: 400px; /* INCREASED: from 250px to 400px so Sankey text is readable */
     width: auto;   /* Maintains the proper aspect ratio */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -130,7 +130,7 @@ header h1 {
 /* Mobile responsive shrinking for horizontal images */
 @media (max-width: 768px) {
     .h-img {
-        height: 180px; /* INCREASED: from 150px to 180px for mobile */
+        height: 280px; /* INCREASED: from 180px to 280px for mobile */
     }
 }
 
