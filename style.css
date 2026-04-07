@@ -113,12 +113,12 @@ header h1 {
 }
 
 .h-img {
-    height: 400px; /* INCREASED: from 250px to 400px so Sankey text is readable */
+    height: 600px; /* INCREASED: from 250px to 400px so Sankey text is readable */
     width: auto;   /* Maintains the proper aspect ratio */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     flex: 0 0 auto; /* Prevents the browser from squishing the images */
-    transition: transform 0.3s;
+    transition: transform 0.4s;
     background-color: white; /* Ensures transparent PNGs look clean */
     padding: 5px; /* Adds a small breathing margin inside the card */
 }
