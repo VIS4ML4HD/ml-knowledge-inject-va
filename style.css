@@ -65,7 +65,7 @@ header h1 {
     background: rgba(255, 255, 255, 0.1);
 }
 
-/* --- NEW: Supplementary Materials Styles --- */
+/* --- Supplementary Materials Styles --- */
 .btn-supplementary {
     background: var(--primary-color);
     border: 1px solid var(--primary-color);
@@ -98,7 +98,52 @@ header h1 {
 .repo-box a:hover {
     text-decoration: underline;
 }
-/* ----------------------------------------- */
+
+/* --- NEW: Horizontal Image Galleries --- */
+.gallery-section {
+    margin-top: 40px;
+}
+
+.h-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px 0 20px 0; /* Extra bottom padding for the scrollbar */
+    scroll-behavior: smooth;
+}
+
+.h-img {
+    height: 300px; /* Forces all images to be the same height */
+    width: auto;   /* Maintains the proper aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    flex: 0 0 auto; /* Prevents the browser from squishing the images */
+    transition: transform 0.3s;
+}
+
+.h-img:hover {
+    transform: scale(1.02); /* Slight zoom when the user hovers over an image */
+}
+
+/* Custom Scrollbar for Webkit (Chrome, Safari, Edge) */
+.h-scroll-container::-webkit-scrollbar {
+    height: 10px;
+}
+
+.h-scroll-container::-webkit-scrollbar-track {
+    background: #e1e1e1; 
+    border-radius: 5px;
+}
+
+.h-scroll-container::-webkit-scrollbar-thumb {
+    background: var(--primary-color); 
+    border-radius: 5px;
+}
+
+.h-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-color); 
+}
+/* -------------------------------------- */
 
 .image-grid {
     display: grid;
@@ -146,7 +191,7 @@ footer {
     color: white;
 }
 
-/* --- NEW: Back to Top Button --- */
+/* --- Back to Top Button --- */
 .back-to-top {
     position: fixed;
     bottom: 30px;
