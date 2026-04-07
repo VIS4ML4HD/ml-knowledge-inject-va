@@ -113,7 +113,7 @@ header h1 {
 }
 
 .h-img {
-    height: 500px; /* INCREASED: from 250px to 600px so Sankey text is readable */
+    height: 450px; /* INCREASED: from 250px to 600px so Sankey text is readable */
     width: auto;   /* Maintains the proper aspect ratio */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
