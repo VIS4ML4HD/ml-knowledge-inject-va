@@ -99,7 +99,7 @@ header h1 {
     text-decoration: underline;
 }
 
-/* --- NEW: Horizontal Image Galleries --- */
+/* --- Horizontal Image Galleries --- */
 .gallery-section {
     margin-top: 40px;
 }
@@ -113,16 +113,25 @@ header h1 {
 }
 
 .h-img {
-    height: 300px; /* Forces all images to be the same height */
+    height: 200px; /* Reduced from 300px to fit ~4 across the screen */
     width: auto;   /* Maintains the proper aspect ratio */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     flex: 0 0 auto; /* Prevents the browser from squishing the images */
     transition: transform 0.3s;
+    background-color: white; /* Ensures transparent PNGs look clean */
+    padding: 5px; /* Adds a small breathing margin inside the card */
 }
 
 .h-img:hover {
     transform: scale(1.02); /* Slight zoom when the user hovers over an image */
+}
+
+/* Mobile responsive shrinking for horizontal images */
+@media (max-width: 768px) {
+    .h-img {
+        height: 150px; 
+    }
 }
 
 /* Custom Scrollbar for Webkit (Chrome, Safari, Edge) */
