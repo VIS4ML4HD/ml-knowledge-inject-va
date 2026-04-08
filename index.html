@@ -15,7 +15,7 @@
             <p class="subtitle">A Comprehensive Survey of VIS4ML Workflows</p>
             <p class="subtitle">Yiwen Xing; Philip Beaucamp; Joyraj Chakraborty; Afrah Farea; Yuanzhe Jin; Saiful Khan; Gennady Andrienko; Natalia Andrienko; Min Chen.</p>
             <div class="header-links">
-                <a href="papers.xlsx" class="btn"><i class="fas fa-file-excel"></i> Download Paper List (.xlsx)</a>
+                <a href="Surveyed Papers.xlsx" class="btn"><i class="fas fa-file-excel"></i> Download Paper List (.xlsx)</a>
                 <a href="#supplementary-section" class="btn btn-supplementary"><i class="fas fa-folder-open"></i> Supplementary Materials</a>
                 <a href="https://github.com/VIS4ML4HD/ml-knowledge-inject-va" class="btn btn-outline"><i class="fab fa-github"></i> View on GitHub</a>
             </div>
@@ -24,9 +24,16 @@
 
     <section class="visuals container">
         <h2>Visual Analytics Workflows & Pathways</h2>
-        
+        <p>Figure 1 illustrates the overall machine learning workflow considered in this survey, spanning development, deployment, and third-party evaluation stages. The development stage includes data preparation, learning configuration, model training, and evaluation, while the deployment stage focuses on model usage, followed by performance monitoring and external evaluation.</p>
+        <br>
+        <p>This framework highlights all possible pathways through which human knowledge can be injected into the ML workflow. In particular, visualization and visual analytics (VA) serve as the central interface through which humans interpret data, models, and results (e.g., what data, what plots, and what analytical tasks), enabling knowledge acquisition.</p>
+        <br>
+        <p>This acquired knowledge then leads to actions through interaction, such as modifying data, adjusting model configurations, or refining system behavior, which in turn influence different stages of the ML workflow. These interactions may occur during development, deployment, or third-party monitoring, forming a closed human-in-the-loop cycle.</p>
+        <br>
+        <p>Overall, this figure provides a unified view that connects visualization, human cognition, interaction, and actionable knowledge injection, forming the conceptual foundation for our coding scheme and subsequent analysis.</p>
+
         <div class="main-workflow-card img-card">
-            <img src="images/MLworkflow.png" alt="Main ML Workflow">
+            <img src="Images/MLworkflow.png" alt="Main ML Workflow">
             <p><strong>Figure 1: Main ML Workflow.</strong> It shows all possible pathways of how human knowledge can be injected to different parts of a ML workflow.</p>
         </div>
     </section>
@@ -35,38 +42,39 @@
         <h2>Five Specific Injection Pathways</h2>
         <p>Scroll horizontally to view the specific injection pathways.</p>
         <div class="h-scroll-container">
-            <img src="images/Pathway-DevSteer.png" alt="Pathway A: Development Workflow Steering" title="Pathway A: Development Workflow Steering" class="h-img-large">
-            <img src="images/Pathway-Explain.png" alt="Pathway B: Visual Analytics for Explanation-only" title="Pathway B: Visual Analytics for Explanation-only" class="h-img-large">
-            <img src="images/Pathway-Labels.png" alt="Pathway C: Label Annotation" title="Pathway C: Label Annotation" class="h-img-large">
-            <img src="images/Pathway-NPL.png" alt="Pathway D: NLP Task Knowledge Injection" title="Pathway D: NLP Task Knowledge Injection" class="h-img-large">
-            <img src="images/Pathway-Offline.png" alt="Pathway E: Actions Taken Outside VA (Offline Actions)" title="Pathway E: Actions Taken Outside VA (Offline Actions)" class="h-img-large">
+            <img src="Images/Pathway-DevSteer.png" alt="Pathway A: Development Workflow Steering" title="Pathway A: Development Workflow Steering" class="h-img-large">
+            <img src="Images/Pathway-Explain.png" alt="Pathway B: Visual Analytics for Explanation-only" title="Pathway B: Visual Analytics for Explanation-only" class="h-img-large">
+            <img src="Images/Pathway-Labels.png" alt="Pathway C: Label Annotation" title="Pathway C: Label Annotation" class="h-img-large">
+            <img src="Images/Pathway-NPL.png" alt="Pathway D: NLP Task Knowledge Injection" title="Pathway D: NLP Task Knowledge Injection" class="h-img-large">
+            <img src="Images/Pathway-Offline.png" alt="Pathway E: Actions Taken Outside VA (Offline Actions)" title="Pathway E: Actions Taken Outside VA (Offline Actions)" class="h-img-large">
         </div>
     </section>
 
     <section class="gallery-section container">
         <h2>Pairwise Relationships (Sankey Diagrams)</h2>
-        <p>Scroll horizontally to view selected pairwise category relationships.</p>
+        <p>Scroll horizontally to view selected pairwise category relationships. For all 276 figures, please visit: <a href="https://github.com/VIS4ML4HD/ml-knowledge-inject-va/tree/main/Images/pairwiseSankeys" target="_blank">Pairwise Sankeys<i class="fas fa-external-link-alt"></i>
+               </a> </p>
         <div class="h-scroll-container">
-            <img src="images/pairwiseSankeys/001_1.2 ML_TM__1.3 ML_ARCH.png" alt="001_1.2 ML_TM vs 1.3 ML_ARCH" title="1.2 ML_TM vs 1.3 ML_ARCH" class="h-img">
-            <img src="images/pairwiseSankeys/002_1.2 ML_TM__1.4 ML_GRP.png" alt="002_1.2 ML_TM vs 1.4 ML_GRP" title="1.2 ML_TM vs 1.4 ML_GRP" class="h-img">
-            <img src="images/pairwiseSankeys/003_1.2 ML_TM__1.5 ML_TASK.png" alt="003_1.2 ML_TM vs 1.5 ML_TASK" title="1.2 ML_TM vs 1.5 ML_TASK" class="h-img">
-            <img src="images/pairwiseSankeys/004_1.2 ML_TM__1.6 ML_WF.png" alt="004_1.2 ML_TM vs 1.6 ML_WF" title="1.2 ML_TM vs 1.6 ML_WF" class="h-img">
-            <img src="images/pairwiseSankeys/005_1.2 ML_TM__1.7 ML_USER.png" alt="005_1.2 ML_TM vs 1.7 ML_USER" title="1.2 ML_TM vs 1.7 ML_USER" class="h-img">
-            <img src="images/pairwiseSankeys/006_1.2 ML_TM__1.8 ML_IN.png" alt="006_1.2 ML_TM vs 1.8 ML_IN" title="1.2 ML_TM vs 1.8 ML_IN" class="h-img">
-            <img src="images/pairwiseSankeys/007_1.2 ML_TM__1.9 ML_OUT.png" alt="007_1.2 ML_TM vs 1.9 ML_OUT" title="1.2 ML_TM vs 1.9 ML_OUT" class="h-img">
-            <img src="images/pairwiseSankeys/008_1.2 ML_TM__2.1 VIS_MLS.png" alt="008_1.2 ML_TM vs 2.1 VIS_MLS" title="1.2 ML_TM vs 2.1 VIS_MLS" class="h-img">
-            <img src="images/pairwiseSankeys/009_1.2 ML_TM__2.2 VIS_OBJ.png" alt="009_1.2 ML_TM vs 2.2 VIS_OBJ" title="1.2 ML_TM vs 2.2 VIS_OBJ" class="h-img">
-            <img src="images/pairwiseSankeys/010_1.2 ML_TM__2.3 VIS_TYP.png" alt="010_1.2 ML_TM vs 2.3 VIS_TYP" title="1.2 ML_TM vs 2.3 VIS_TYP" class="h-img">
-            <img src="images/pairwiseSankeys/011_1.2 ML_TM__2.4 VIS_CH.png" alt="011_1.2 ML_TM vs 2.4 VIS_CH" title="1.2 ML_TM vs 2.4 VIS_CH" class="h-img">
-            <img src="images/pairwiseSankeys/012_1.2 ML_TM__2.5 VIS_PTN.png" alt="012_1.2 ML_TM vs 2.5 VIS_PTN" title="1.2 ML_TM vs 2.5 VIS_PTN" class="h-img">
-            <img src="images/pairwiseSankeys/013_1.2 ML_TM__2.6 VIS_NoC.png" alt="013_1.2 ML_TM vs 2.6 VIS_NoC" title="1.2 ML_TM vs 2.6 VIS_NoC" class="h-img">
-            <img src="images/pairwiseSankeys/014_1.2 ML_TM__3.1 INT_MLS.png" alt="014_1.2 ML_TM vs 3.1 INT_MLS" title="1.2 ML_TM vs 3.1 INT_MLS" class="h-img">
-            <img src="images/pairwiseSankeys/015_1.2 ML_TM__3.2 INT_TYP_NAV.png" alt="015_1.2 ML_TM vs 3.2 INT_TYP_NAV" title="1.2 ML_TM vs 3.2 INT_TYP_NAV" class="h-img">
-            <img src="images/pairwiseSankeys/016_1.2 ML_TM__3.3 INT_TYP_MLDv.png" alt="016_1.2 ML_TM vs 3.3 INT_TYP_MLDv" title="1.2 ML_TM vs 3.3 INT_TYP_MLDv" class="h-img">
-            <img src="images/pairwiseSankeys/017_1.2 ML_TM__3.4 INT_TYP_MLDp.png" alt="017_1.2 ML_TM vs 3.4 INT_TYP_MLDp" title="1.2 ML_TM vs 3.4 INT_TYP_MLDp" class="h-img">
-            <img src="images/pairwiseSankeys/018_1.2 ML_TM__3.5 INT_TYP_AnF.png" alt="018_1.2 ML_TM vs 3.5 INT_TYP_AnF" title="1.2 ML_TM vs 3.5 INT_TYP_AnF" class="h-img">
-            <img src="images/pairwiseSankeys/019_1.2 ML_TM__3.6 INT_MOD.png" alt="019_1.2 ML_TM vs 3.6 INT_MOD" title="1.2 ML_TM vs 3.6 INT_MOD" class="h-img">
-            <img src="images/pairwiseSankeys/020_1.2 ML_TM__4.1 ACT_TYP.png" alt="020_1.2 ML_TM vs 4.1 ACT_TYP" title="1.2 ML_TM vs 4.1 ACT_TYP" class="h-img">
+            <img src="Images/pairwiseSankeys/001_1.2 ML_TM__1.3 ML_ARCH.png" alt="001_1.2 ML_TM vs 1.3 ML_ARCH" title="1.2 ML_TM vs 1.3 ML_ARCH" class="h-img">
+            <img src="Images/pairwiseSankeys/002_1.2 ML_TM__1.4 ML_GRP.png" alt="002_1.2 ML_TM vs 1.4 ML_GRP" title="1.2 ML_TM vs 1.4 ML_GRP" class="h-img">
+            <img src="Images/pairwiseSankeys/003_1.2 ML_TM__1.5 ML_TASK.png" alt="003_1.2 ML_TM vs 1.5 ML_TASK" title="1.2 ML_TM vs 1.5 ML_TASK" class="h-img">
+            <img src="Images/pairwiseSankeys/004_1.2 ML_TM__1.6 ML_WF.png" alt="004_1.2 ML_TM vs 1.6 ML_WF" title="1.2 ML_TM vs 1.6 ML_WF" class="h-img">
+            <img src="Images/pairwiseSankeys/005_1.2 ML_TM__1.7 ML_USER.png" alt="005_1.2 ML_TM vs 1.7 ML_USER" title="1.2 ML_TM vs 1.7 ML_USER" class="h-img">
+            <img src="Images/pairwiseSankeys/006_1.2 ML_TM__1.8 ML_IN.png" alt="006_1.2 ML_TM vs 1.8 ML_IN" title="1.2 ML_TM vs 1.8 ML_IN" class="h-img">
+            <img src="Images/pairwiseSankeys/007_1.2 ML_TM__1.9 ML_OUT.png" alt="007_1.2 ML_TM vs 1.9 ML_OUT" title="1.2 ML_TM vs 1.9 ML_OUT" class="h-img">
+            <img src="Images/pairwiseSankeys/008_1.2 ML_TM__2.1 VIS_MLS.png" alt="008_1.2 ML_TM vs 2.1 VIS_MLS" title="1.2 ML_TM vs 2.1 VIS_MLS" class="h-img">
+            <img src="Images/pairwiseSankeys/009_1.2 ML_TM__2.2 VIS_OBJ.png" alt="009_1.2 ML_TM vs 2.2 VIS_OBJ" title="1.2 ML_TM vs 2.2 VIS_OBJ" class="h-img">
+            <img src="Images/pairwiseSankeys/010_1.2 ML_TM__2.3 VIS_TYP.png" alt="010_1.2 ML_TM vs 2.3 VIS_TYP" title="1.2 ML_TM vs 2.3 VIS_TYP" class="h-img">
+            <img src="Images/pairwiseSankeys/011_1.2 ML_TM__2.4 VIS_CH.png" alt="011_1.2 ML_TM vs 2.4 VIS_CH" title="1.2 ML_TM vs 2.4 VIS_CH" class="h-img">
+            <img src="Images/pairwiseSankeys/012_1.2 ML_TM__2.5 VIS_PTN.png" alt="012_1.2 ML_TM vs 2.5 VIS_PTN" title="1.2 ML_TM vs 2.5 VIS_PTN" class="h-img">
+            <img src="Images/pairwiseSankeys/013_1.2 ML_TM__2.6 VIS_NoC.png" alt="013_1.2 ML_TM vs 2.6 VIS_NoC" title="1.2 ML_TM vs 2.6 VIS_NoC" class="h-img">
+            <img src="Images/pairwiseSankeys/014_1.2 ML_TM__3.1 INT_MLS.png" alt="014_1.2 ML_TM vs 3.1 INT_MLS" title="1.2 ML_TM vs 3.1 INT_MLS" class="h-img">
+            <img src="Images/pairwiseSankeys/015_1.2 ML_TM__3.2 INT_TYP_NAV.png" alt="015_1.2 ML_TM vs 3.2 INT_TYP_NAV" title="1.2 ML_TM vs 3.2 INT_TYP_NAV" class="h-img">
+            <img src="Images/pairwiseSankeys/016_1.2 ML_TM__3.3 INT_TYP_MLDv.png" alt="016_1.2 ML_TM vs 3.3 INT_TYP_MLDv" title="1.2 ML_TM vs 3.3 INT_TYP_MLDv" class="h-img">
+            <img src="Images/pairwiseSankeys/017_1.2 ML_TM__3.4 INT_TYP_MLDp.png" alt="017_1.2 ML_TM vs 3.4 INT_TYP_MLDp" title="1.2 ML_TM vs 3.4 INT_TYP_MLDp" class="h-img">
+            <img src="Images/pairwiseSankeys/018_1.2 ML_TM__3.5 INT_TYP_AnF.png" alt="018_1.2 ML_TM vs 3.5 INT_TYP_AnF" title="1.2 ML_TM vs 3.5 INT_TYP_AnF" class="h-img">
+            <img src="Images/pairwiseSankeys/019_1.2 ML_TM__3.6 INT_MOD.png" alt="019_1.2 ML_TM vs 3.6 INT_MOD" title="1.2 ML_TM vs 3.6 INT_MOD" class="h-img">
+            <img src="Images/pairwiseSankeys/020_1.2 ML_TM__4.1 ACT_TYP.png" alt="020_1.2 ML_TM vs 4.1 ACT_TYP" title="1.2 ML_TM vs 4.1 ACT_TYP" class="h-img">
         </div>
     </section>
 
@@ -74,36 +82,36 @@
         <h2>Category Statistics</h2>
         <p>Scroll horizontally to view the statistical breakdown charts.</p>
         <div class="h-scroll-container">
-            <img src="images/statisticsPerCat/1.1 ML_TECH.png" alt="1.1 ML_TECH" title="1.1 ML_TECH" class="h-img">
-            <img src="images/statisticsPerCat/1.2 ML_TM.png" alt="1.2 ML_TM" title="1.2 ML_TM" class="h-img">
-            <img src="images/statisticsPerCat/1.3 ML_ARCH.png" alt="1.3 ML_ARCH" title="1.3 ML_ARCH" class="h-img">
-            <img src="images/statisticsPerCat/1.4 ML_GRP.png" alt="1.4 ML_GRP" title="1.4 ML_GRP" class="h-img">
-            <img src="images/statisticsPerCat/1.5 ML_TASK.png" alt="1.5 ML_TASK" title="1.5 ML_TASK" class="h-img">
-            <img src="images/statisticsPerCat/1.6 ML_WF.png" alt="1.6 ML_WF" title="1.6 ML_WF" class="h-img">
-            <img src="images/statisticsPerCat/1.7 ML_USER.png" alt="1.7 ML_USER" title="1.7 ML_USER" class="h-img">
-            <img src="images/statisticsPerCat/1.8 ML_IN.png" alt="1.8 ML_IN" title="1.8 ML_IN" class="h-img">
-            <img src="images/statisticsPerCat/1.9 ML_OUT.png" alt="1.9 ML_OUT" title="1.9 ML_OUT" class="h-img">
-            <img src="images/statisticsPerCat/2.1 VIS_MLS.png" alt="2.1 VIS_MLS" title="2.1 VIS_MLS" class="h-img">
-            <img src="images/statisticsPerCat/2.2 VIS_OBJ.png" alt="2.2 VIS_OBJ" title="2.2 VIS_OBJ" class="h-img">
-            <img src="images/statisticsPerCat/2.3 VIS_TYP.png" alt="2.3 VIS_TYP" title="2.3 VIS_TYP" class="h-img">
-            <img src="images/statisticsPerCat/2.4 VIS_CH.png" alt="2.4 VIS_CH" title="2.4 VIS_CH" class="h-img">
-            <img src="images/statisticsPerCat/2.5 VIS_PTN.png" alt="2.5 VIS_PTN" title="2.5 VIS_PTN" class="h-img">
-            <img src="images/statisticsPerCat/2.6 VIS_NoC.png" alt="2.6 VIS_NoC" title="2.6 VIS_NoC" class="h-img">
-            <img src="images/statisticsPerCat/3.1 INT_MLS.png" alt="3.1 INT_MLS" title="3.1 INT_MLS" class="h-img">
-            <img src="images/statisticsPerCat/3.2 INT_TYP_NAV.png" alt="3.2 INT_TYP_NAV" title="3.2 INT_TYP_NAV" class="h-img">
-            <img src="images/statisticsPerCat/3.3 INT_TYP_MLDv.png" alt="3.3 INT_TYP_MLDv" title="3.3 INT_TYP_MLDv" class="h-img">
-            <img src="images/statisticsPerCat/3.4 INT_TYP_MLDp.png" alt="3.4 INT_TYP_MLDp" title="3.4 INT_TYP_MLDp" class="h-img">
-            <img src="images/statisticsPerCat/3.5 INT_TYP_AnF.png" alt="3.5 INT_TYP_AnF" title="3.5 INT_TYP_AnF" class="h-img">
-            <img src="images/statisticsPerCat/3.6 INT_MOD.png" alt="3.6 INT_MOD" title="3.6 INT_MOD" class="h-img">
-            <img src="images/statisticsPerCat/4.1 ACT_TYP.png" alt="4.1 ACT_TYP" title="4.1 ACT_TYP" class="h-img">
-            <img src="images/statisticsPerCat/4.2 ACT_EVD.png" alt="4.2 ACT_EVD" title="4.2 ACT_EVD" class="h-img">
-            <img src="images/statisticsPerCat/4.3 ACT_KI.png" alt="4.3 ACT_KI" title="4.3 ACT_KI" class="h-img">
+            <img src="Images/statisticsPerCat/1.1 ML_TECH.png" alt="1.1 ML_TECH" title="1.1 ML_TECH" class="h-img">
+            <img src="Images/statisticsPerCat/1.2 ML_TM.png" alt="1.2 ML_TM" title="1.2 ML_TM" class="h-img">
+            <img src="Images/statisticsPerCat/1.3 ML_ARCH.png" alt="1.3 ML_ARCH" title="1.3 ML_ARCH" class="h-img">
+            <img src="Images/statisticsPerCat/1.4 ML_GRP.png" alt="1.4 ML_GRP" title="1.4 ML_GRP" class="h-img">
+            <img src="Images/statisticsPerCat/1.5 ML_TASK.png" alt="1.5 ML_TASK" title="1.5 ML_TASK" class="h-img">
+            <img src="Images/statisticsPerCat/1.6 ML_WF.png" alt="1.6 ML_WF" title="1.6 ML_WF" class="h-img">
+            <img src="Images/statisticsPerCat/1.7 ML_USER.png" alt="1.7 ML_USER" title="1.7 ML_USER" class="h-img">
+            <img src="Images/statisticsPerCat/1.8 ML_IN.png" alt="1.8 ML_IN" title="1.8 ML_IN" class="h-img">
+            <img src="Images/statisticsPerCat/1.9 ML_OUT.png" alt="1.9 ML_OUT" title="1.9 ML_OUT" class="h-img">
+            <img src="Images/statisticsPerCat/2.1 VIS_MLS.png" alt="2.1 VIS_MLS" title="2.1 VIS_MLS" class="h-img">
+            <img src="Images/statisticsPerCat/2.2 VIS_OBJ.png" alt="2.2 VIS_OBJ" title="2.2 VIS_OBJ" class="h-img">
+            <img src="Images/statisticsPerCat/2.3 VIS_TYP.png" alt="2.3 VIS_TYP" title="2.3 VIS_TYP" class="h-img">
+            <img src="Images/statisticsPerCat/2.4 VIS_CH.png" alt="2.4 VIS_CH" title="2.4 VIS_CH" class="h-img">
+            <img src="Images/statisticsPerCat/2.5 VIS_PTN.png" alt="2.5 VIS_PTN" title="2.5 VIS_PTN" class="h-img">
+            <img src="Images/statisticsPerCat/2.6 VIS_NoC.png" alt="2.6 VIS_NoC" title="2.6 VIS_NoC" class="h-img">
+            <img src="Images/statisticsPerCat/3.1 INT_MLS.png" alt="3.1 INT_MLS" title="3.1 INT_MLS" class="h-img">
+            <img src="Images/statisticsPerCat/3.2 INT_TYP_NAV.png" alt="3.2 INT_TYP_NAV" title="3.2 INT_TYP_NAV" class="h-img">
+            <img src="Images/statisticsPerCat/3.3 INT_TYP_MLDv.png" alt="3.3 INT_TYP_MLDv" title="3.3 INT_TYP_MLDv" class="h-img">
+            <img src="Images/statisticsPerCat/3.4 INT_TYP_MLDp.png" alt="3.4 INT_TYP_MLDp" title="3.4 INT_TYP_MLDp" class="h-img">
+            <img src="Images/statisticsPerCat/3.5 INT_TYP_AnF.png" alt="3.5 INT_TYP_AnF" title="3.5 INT_TYP_AnF" class="h-img">
+            <img src="Images/statisticsPerCat/3.6 INT_MOD.png" alt="3.6 INT_MOD" title="3.6 INT_MOD" class="h-img">
+            <img src="Images/statisticsPerCat/4.1 ACT_TYP.png" alt="4.1 ACT_TYP" title="4.1 ACT_TYP" class="h-img">
+            <img src="Images/statisticsPerCat/4.2 ACT_EVD.png" alt="4.2 ACT_EVD" title="4.2 ACT_EVD" class="h-img">
+            <img src="Images/statisticsPerCat/4.3 ACT_KI.png" alt="4.3 ACT_KI" title="4.3 ACT_KI" class="h-img">
         </div>
     </section>
 
     <section id="supplementary-section" class="supplementary container">
         <h2>Supplementary Materials</h2>
-        <p>Detailed experimental results, coding schemes, and additional data analysis can be found in our repository:</p>
+        <p>Detailed coded results, coding schemes, and additional data analysis results can be found in our repository:</p>
         <div class="repo-box">
             <p><i class="fas fa-info-circle"></i> Access the full data repository: 
                <a href="https://github.com/VIS4ML4HD/ml-knowledge-inject-va/tree/main/SpplementaryMaterials" target="_blank">
@@ -113,7 +121,7 @@
         </div>
     </section>
 
-    <section class="papers container">
+    <!-- <section class="papers container">
         <h2>Surveyed Literature</h2>
         <p>This section contains the categorized list of papers analyzed in the survey. You can also download the full metadata in the XLS file above.</p>
         
@@ -127,7 +135,7 @@
                 <a href="#" class="paper-link">Read Paper <i class="fas fa-external-link-alt"></i></a>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <footer>
         <p>&copy; 2026 VIS4ML Project Team. Research Page. **This page does not collect any information from the viewer or reviewer.</p>
